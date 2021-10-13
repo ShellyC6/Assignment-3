@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assignment1.Residential">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAEAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Residential\Residential.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Commercial">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAAAAAAAAAAAAEAAAABAAAAA=</HashCode>
+      <FileName>Commercial\Commercial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Institutional">
+    <Position X="10" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgAACAAIEAAECAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institutional\Institutional.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Villa">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAAAAAAAACAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Residential\Villa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Apartment">
+    <Position X="2.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAGAAAEBAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Residential\Apartment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Townhouse">
+    <Position X="4" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAEAEAAFAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Residential\Townhouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Shop">
+    <Position X="5.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAAABAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commercial\Shop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Warehouse">
+    <Position X="7.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAEAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commercial\Warehouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.School">
+    <Position X="9.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAEAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institutional\School.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.University">
+    <Position X="11" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAADAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Institutional\University.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Address">
+    <Position X="9" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAIAAAACAAAAAIAAgADAAIAAAAAAIA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Estate">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAATIAAAGQAAEAAEAAAAAAAAEAABABAAAQgIAAAACiA=</HashCode>
+      <FileName>Estate.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment1.Payment">
+    <Position X="5.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAIAAAAAAAAAAACAAAAAgAAAAAAAAABAAAA=</HashCode>
+      <FileName>PaymentSystem\Payment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.Bank">
+    <Position X="4" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAACAQAAAgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentSystem\Bank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.WesternUnion">
+    <Position X="5.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAgAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentSystem\WesternUnion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.PayPal">
+    <Position X="7.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaymentSystem\PayPal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment1.ListManager&lt;T&gt;">
+    <Position X="17.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIACAAAAAACAAAgAAAAAAQABAIAAAQAAAAAQAAAAIA=</HashCode>
+      <FileName>ListManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment1.EstateManager">
+    <Position X="17.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EstateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Assignment1.IEstate">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEstate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Assignment1.IListManager&lt;T&gt;">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIACAAAABACAAAgAAAAEAQIAAIAAAAAAAAAQAAAAIA=</HashCode>
+      <FileName>IListManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Assignment1.Type">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEgAAAAAAAAAAAAAAIAAgAAAABAgAAAAEgAAAA=</HashCode>
+      <FileName>Type.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assignment1.Countries">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iv9xbfbzI1rWmtgC3YUk9lZ6Chh6NfxGM3O0rBUA1b0=</HashCode>
+      <FileName>Countries.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assignment1.Category">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAgAAAEAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Type.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Assignment1.LegalForm">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAAA=</HashCode>
+      <FileName>LegalForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
