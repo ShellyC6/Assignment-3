@@ -10,7 +10,7 @@ using System.Text;
 	///The countries of the world.
 	/// </summary>
 
-namespace Assignment1
+namespace Assignment3
 {
     [Serializable]
     public enum Countries

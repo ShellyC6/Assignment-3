@@ -13,7 +13,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 
-namespace Assignment1
+namespace Assignment3
 {
     
     public partial class Form3 : Form
@@ -283,25 +283,25 @@ namespace Assignment1
                 switch (EstateObj.Type)
                 {
                     case Type.villa:
-                        pictureBox.Image = Assignment1.Properties.Resources.villa;
+                        pictureBox.Image = Assignment3.Properties.Resources.villa;
                         break;
                     case Type.apartment:
-                        pictureBox.Image = Assignment1.Properties.Resources.apartment;
+                        pictureBox.Image = Assignment3.Properties.Resources.apartment;
                         break;
                     case Type.townhouse:
-                        pictureBox.Image = Assignment1.Properties.Resources.townhouse;
+                        pictureBox.Image = Assignment3.Properties.Resources.townhouse;
                         break;
                     case Type.shop:
-                        pictureBox.Image = Assignment1.Properties.Resources.shop;
+                        pictureBox.Image = Assignment3.Properties.Resources.shop;
                         break;
                     case Type.warehouse:
-                        pictureBox.Image = Assignment1.Properties.Resources.warehouse;
+                        pictureBox.Image = Assignment3.Properties.Resources.warehouse;
                         break;
                     case Type.school:
-                        pictureBox.Image = Assignment1.Properties.Resources.school;
+                        pictureBox.Image = Assignment3.Properties.Resources.school;
                         break;
                     case Type.university:
-                        pictureBox.Image = Assignment1.Properties.Resources.university;
+                        pictureBox.Image = Assignment3.Properties.Resources.university;
                         break;
                     default:
                         break;
@@ -331,25 +331,25 @@ namespace Assignment1
                 switch (TempObj.Type)
                 {
                     case Type.villa:
-                        pictureBox.Image = Assignment1.Properties.Resources.villa;
+                        pictureBox.Image = Assignment3.Properties.Resources.villa;
                         break;
                     case Type.apartment:
-                        pictureBox.Image = Assignment1.Properties.Resources.apartment;
+                        pictureBox.Image = Assignment3.Properties.Resources.apartment;
                         break;
                     case Type.townhouse:
-                        pictureBox.Image = Assignment1.Properties.Resources.townhouse;
+                        pictureBox.Image = Assignment3.Properties.Resources.townhouse;
                         break;
                     case Type.shop:
-                        pictureBox.Image = Assignment1.Properties.Resources.shop;
+                        pictureBox.Image = Assignment3.Properties.Resources.shop;
                         break;
                     case Type.warehouse:
-                        pictureBox.Image = Assignment1.Properties.Resources.warehouse;
+                        pictureBox.Image = Assignment3.Properties.Resources.warehouse;
                         break;
                     case Type.school:
-                        pictureBox.Image = Assignment1.Properties.Resources.school;
+                        pictureBox.Image = Assignment3.Properties.Resources.school;
                         break;
                     case Type.university:
-                        pictureBox.Image = Assignment1.Properties.Resources.university;
+                        pictureBox.Image = Assignment3.Properties.Resources.university;
                         break;
                     default:
                         break;
@@ -960,7 +960,7 @@ namespace Assignment1
         private void exportToXMLFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure?", "Export To XML", MessageBoxButtons.YesNo);
-            string XMLText;
+            //string XMLText;
             if (dialogResult == DialogResult.Yes)
             {
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
