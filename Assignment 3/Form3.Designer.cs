@@ -903,7 +903,7 @@ namespace Assignment1
             this.exitToolStripMenuItem});
             this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
             this.fIleToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.fIleToolStripMenuItem.Text = "FIle";
+            this.fIleToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
             // 

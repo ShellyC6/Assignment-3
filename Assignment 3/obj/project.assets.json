@@ -8,19 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lucie\\.nuget\\packages\\": {}
+    "C:\\Users\\shell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucie\\Desktop\\ECE\\INGE 3\\S1 Suede\\C# and .net\\Assignments\\Assignment 2\\Assignment-2\\Assignment2_v1\\Assignment1.csproj",
+      "projectUniqueName": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\Assignment1.csproj",
       "projectName": "Assignment1",
-      "projectPath": "C:\\Users\\lucie\\Desktop\\ECE\\INGE 3\\S1 Suede\\C# and .net\\Assignments\\Assignment 2\\Assignment-2\\Assignment2_v1\\Assignment1.csproj",
-      "packagesPath": "C:\\Users\\lucie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucie\\Desktop\\ECE\\INGE 3\\S1 Suede\\C# and .net\\Assignments\\Assignment 2\\Assignment-2\\Assignment2_v1\\obj\\",
+      "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\Assignment1.csproj",
+      "packagesPath": "C:\\Users\\shell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lucie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shell\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

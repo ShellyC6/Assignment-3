@@ -75,3 +75,22 @@ C:\Users\lucie\Desktop\ECE\INGE 3\S1 Suede\C# and .net\Assignments\Assignment 2\
 C:\Users\lucie\Desktop\ECE\INGE 3\S1 Suede\C# and .net\Assignments\Assignment 2\Assignment-2\Assignment2_v1\bin\Debug\net5.0-windows\ref\Assignment1.dll
 C:\Users\lucie\Desktop\ECE\INGE 3\S1 Suede\C# and .net\Assignments\Assignment 2\Assignment-2\Assignment2_v1\bin\Debug\net5.0-windows\Assignment1.pdb
 C:\Users\lucie\Desktop\ECE\INGE 3\S1 Suede\C# and .net\Assignments\Assignment 2\Assignment-2\Assignment2_v1\obj\Debug\net5.0-windows\Assignment1.genruntimeconfig.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.exe
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.deps.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.runtimeconfig.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.runtimeconfig.dev.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\ref\Assignment1.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\bin\Debug\net5.0-windows\Assignment1.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.csproj.AssemblyReference.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.Form3.resources
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.Properties.Resources.resources
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.csproj.GenerateResource.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.AssemblyInfoInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.AssemblyInfo.cs
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\ref\Assignment1.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\Assignment1.genruntimeconfig.cache
