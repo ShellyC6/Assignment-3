@@ -1,0 +1,12 @@
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.csproj.AssemblyReference.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.AssemblyInfoInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.AssemblyInfo.cs
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.csproj.CoreCompileInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\bin\Debug\net5.0\RealEstateDAL.deps.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\bin\Debug\net5.0\RealEstateDAL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\bin\Debug\net5.0\ref\RealEstateDAL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\bin\Debug\net5.0\RealEstateDAL.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\ref\RealEstateDAL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateDAL\obj\Debug\net5.0\RealEstateDAL.pdb

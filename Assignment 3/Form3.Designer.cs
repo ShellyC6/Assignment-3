@@ -1,5 +1,5 @@
 ﻿
-namespace Assignment3
+namespace RealEstateApp
 {
     partial class Form3
     {

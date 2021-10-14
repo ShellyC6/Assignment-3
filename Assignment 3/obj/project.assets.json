@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {}
+    "net5.0-windows7.0": {
+      "RealEstateBLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "RealEstateDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RealEstateBLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealEstateBLL.dll": {}
+        }
+      },
+      "RealEstateDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/RealEstateDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RealEstateDAL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RealEstateBLL/1.0.0": {
+      "type": "project",
+      "path": "../RealEstateBLL/RealEstateBLL.csproj",
+      "msbuildProject": "../RealEstateBLL/RealEstateBLL.csproj"
+    },
+    "RealEstateDAL/1.0.0": {
+      "type": "project",
+      "path": "../RealEstateDAL/RealEstateDAL.csproj",
+      "msbuildProject": "../RealEstateDAL/RealEstateDAL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": []
+    "net5.0-windows7.0": [
+      "RealEstateBLL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\shell\\.nuget\\packages\\": {}
@@ -13,9 +50,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\Assignment3.csproj",
-      "projectName": "Assignment3",
-      "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\Assignment3.csproj",
+      "projectUniqueName": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\RealEstateApp.csproj",
+      "projectName": "RealEstateApp",
+      "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\RealEstateApp.csproj",
       "packagesPath": "C:\\Users\\shell\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\Assignment 3\\obj\\",
       "projectStyle": "PackageReference",
@@ -33,7 +70,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\RealEstateBLL\\RealEstateBLL.csproj": {
+              "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\RealEstateBLL\\RealEstateBLL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

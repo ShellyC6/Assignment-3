@@ -11,11 +11,11 @@ using System.IO;//FileStream, Reader/Writer classes
 using System.Runtime.Serialization; //IFormatter
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+using RealEstateBLL;
+using RealEstateDAL;
 
-
-namespace Assignment3
+namespace RealEstateApp
 {
-    
     public partial class Form3 : Form
     {
         Estate EstateObj = null;
@@ -31,7 +31,7 @@ namespace Assignment3
         private void Init()
         {
             // Display the enum countries in a listbox
-            Array array = Enum.GetValues(typeof(Countries));
+            Array array = Enum.GetValues(Typeof(RealEstateBLL.Countries));
             listBox_Countries.BeginUpdate();
             foreach (object obj in array)
             {
@@ -140,31 +140,31 @@ namespace Assignment3
                     return false;
             }
 
-            // Check if a type is selected and if the fields of this type are well filled
-            Type SelectedType = GetSelectedType();
+            // Check if a Type is selected and if the fields of this Type are well filled
+            RealEstateBLL.Type SelectedType = GetSelectedType();
             switch (SelectedType)
             {
-                case Type.villa:
+                case RealEstateBLL.Type.villa:
                     break;
-                case Type.apartment:
+                case RealEstateBLL.Type.apartment:
                     break;
-                case Type.townhouse:
+                case RealEstateBLL.Type.townhouse:
                     if (Int32.TryParse(textBox_GardenSize.Text, out number) == false) return false;
                     if (number < 0) return false;
                     break;
-                case Type.shop:
+                case RealEstateBLL.Type.shop:
                     if (Int32.TryParse(textBox_VitrineLength.Text, out number) == false) return false;
                     if (number < 0) return false;
                     break;
-                case Type.warehouse:
+                case RealEstateBLL.Type.warehouse:
                     if (Int32.TryParse(textBox_NbShelfs.Text, out number) == false) return false;
                     if (number <= 0) return false;
                     break;
-                case Type.school:
+                case RealEstateBLL.Type.school:
                     if (Int32.TryParse(textBox_NbClassrooms.Text, out number) == false) return false;
                     if (number <= 0) return false;
                     break;
-                case Type.university:
+                case RealEstateBLL.Type.university:
                     if (Int32.TryParse(textBox_NbFaculties.Text, out number) == false) return false;
                     if (number <= 0) return false;
                     break;
@@ -231,28 +231,28 @@ namespace Assignment3
             }
 
             // Create the estate
-            Type SelectedType = GetSelectedType();
+            RealEstateBLL.Type SelectedType = GetSelectedType();
             switch (SelectedType)
             {
-                case Type.villa:
+                case RealEstateBLL.Type.villa:
                     EstateObj = new Villa(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, int.Parse(textBox_NbRooms.Text), checkBox_Pool.Checked);
                     break;
-                case Type.apartment:
+                case RealEstateBLL.Type.apartment:
                     EstateObj = new Apartment(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, int.Parse(textBox_NbRooms.Text), checkBox_Balcony.Checked);
                     break;
-                case Type.townhouse:
+                case RealEstateBLL.Type.townhouse:
                     EstateObj = new Townhouse(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, int.Parse(textBox_NbRooms.Text), int.Parse(textBox_GardenSize.Text));
                     break;
-                case Type.shop:
+                case RealEstateBLL.Type.shop:
                     EstateObj = new Shop(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, int.Parse(textBox_NbFloors.Text), int.Parse(textBox_VitrineLength.Text));
                     break;
-                case Type.warehouse:
+                case RealEstateBLL.Type.warehouse:
                     EstateObj = new Warehouse(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, int.Parse(textBox_NbFloors.Text), int.Parse(textBox_NbShelfs.Text));
                     break;
-                case Type.school:
+                case RealEstateBLL.Type.school:
                     EstateObj = new School(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, checkBox_Library.Checked, int.Parse(textBox_NbSeats.Text), int.Parse(textBox_NbClassrooms.Text));
                     break;
-                case Type.university:
+                case RealEstateBLL.Type.university:
                     EstateObj = new University(int.Parse(textBox_ID.Text), new Address(int.Parse(textBox_ZipCode.Text), textBox_Street.Text, listBox_Countries.SelectedIndex, textBox_City.Text), 0, GetSelectedLegalForm(), PaymentSystem, checkBox_Library.Checked, int.Parse(textBox_NbSeats.Text), int.Parse(textBox_NbFaculties.Text));
                     break;
                 default:
@@ -283,25 +283,25 @@ namespace Assignment3
                 switch (EstateObj.Type)
                 {
                     case Type.villa:
-                        pictureBox.Image = Assignment3.Properties.Resources.villa;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.villa;
                         break;
                     case Type.apartment:
-                        pictureBox.Image = Assignment3.Properties.Resources.apartment;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.apartment;
                         break;
                     case Type.townhouse:
-                        pictureBox.Image = Assignment3.Properties.Resources.townhouse;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.townhouse;
                         break;
                     case Type.shop:
-                        pictureBox.Image = Assignment3.Properties.Resources.shop;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.shop;
                         break;
                     case Type.warehouse:
-                        pictureBox.Image = Assignment3.Properties.Resources.warehouse;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.warehouse;
                         break;
                     case Type.school:
-                        pictureBox.Image = Assignment3.Properties.Resources.school;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.school;
                         break;
                     case Type.university:
-                        pictureBox.Image = Assignment3.Properties.Resources.university;
+                        pictureBox.Image = RealEstateApp.Properties.Resources.university;
                         break;
                     default:
                         break;
@@ -330,26 +330,26 @@ namespace Assignment3
                 textBox_CurrentEstate.Text = TempObj.Category + " - " + TempObj.Type + "\n \n" + TempObj.DisplayInfo();
                 switch (TempObj.Type)
                 {
-                    case Type.villa:
-                        pictureBox.Image = Assignment3.Properties.Resources.villa;
+                    case RealEstateBLL.Type.villa:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.villa;
                         break;
-                    case Type.apartment:
-                        pictureBox.Image = Assignment3.Properties.Resources.apartment;
+                    case RealEstateBLL.Type.apartment:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.apartment;
                         break;
-                    case Type.townhouse:
-                        pictureBox.Image = Assignment3.Properties.Resources.townhouse;
+                    case RealEstateBLL.Type.townhouse:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.townhouse;
                         break;
-                    case Type.shop:
-                        pictureBox.Image = Assignment3.Properties.Resources.shop;
+                    case RealEstateBLL.Type.shop:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.shop;
                         break;
-                    case Type.warehouse:
-                        pictureBox.Image = Assignment3.Properties.Resources.warehouse;
+                    case RealEstateBLL.Type.warehouse:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.warehouse;
                         break;
-                    case Type.school:
-                        pictureBox.Image = Assignment3.Properties.Resources.school;
+                    case RealEstateBLL.Type.school:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.school;
                         break;
-                    case Type.university:
-                        pictureBox.Image = Assignment3.Properties.Resources.university;
+                    case RealEstateBLL.Type.university:
+                        pictureBox.Image = RealEstateApp.Properties.Resources.university;
                         break;
                     default:
                         break;
@@ -377,7 +377,7 @@ namespace Assignment3
                     ResidentialFields.Visible = true;
                     CommercialFields.Visible = false;
                     InstitutionalFields.Visible = false;
-                    // Unselect commercial and institutional types
+                    // Unselect commercial and institutional Types
                     listBox_commercial.ClearSelected();
                     listBox_institutional.ClearSelected();
                     break;
@@ -390,7 +390,7 @@ namespace Assignment3
                     ResidentialFields.Visible = false;
                     CommercialFields.Visible = true;
                     InstitutionalFields.Visible = false;
-                    // Unselect residential and institutional types
+                    // Unselect residential and institutional Types
                     listBox_residential.ClearSelected();
                     listBox_institutional.ClearSelected();
                     break;
@@ -403,12 +403,12 @@ namespace Assignment3
                     ResidentialFields.Visible = false;
                     CommercialFields.Visible = false;
                     InstitutionalFields.Visible = true;
-                    // Unselect residential and commercial types
+                    // Unselect residential and commercial Types
                     listBox_residential.ClearSelected();
                     listBox_commercial.ClearSelected();
                     break;
                 default:    // None
-                    // Unselect all types
+                    // Unselect all Types
                     listBox_residential.ClearSelected();
                     listBox_commercial.ClearSelected();
                     listBox_institutional.ClearSelected();
@@ -520,9 +520,9 @@ namespace Assignment3
             }
         }
 
-        private Type GetSelectedType()
+        private RealEstateBLL.Type GetSelectedType()
         {
-            Type SelectedType;
+            RealEstateBLL.Type SelectedType;
             int SelectedCategory = listBox_category.SelectedIndex;
 
             switch(SelectedCategory)
@@ -537,57 +537,57 @@ namespace Assignment3
                     SelectedType = GetSelectedInstitutional();
                     break;
                 default:
-                    SelectedType = Type.nothing;
+                    SelectedType = RealEstateBLL.Type.nothing;
                     break;
             }
 
             return SelectedType;
         }
 
-        private Type GetSelectedResidential()
+        private RealEstateBLL.Type GetSelectedResidential()
         {
             int SelectedType = listBox_residential.SelectedIndex;
 
             switch(SelectedType)
             {
                 case 0:
-                    return Type.villa;
+                    return RealEstateBLL.Type.villa;
                 case 1:
-                    return Type.apartment;
+                    return RealEstateBLL.Type.apartment;
                 case 2:
-                    return Type.townhouse;
+                    return RealEstateBLL.Type.townhouse;
                 default:
-                    return Type.nothing;
+                    return RealEstateBLL.Type.nothing;
             }
         }
 
-        private Type GetSelectedCommercial()
+        private RealEstateBLL.Type GetSelectedCommercial()
         {
             int SelectedType = listBox_commercial.SelectedIndex;
 
             switch(SelectedType)
             {
                 case 0:
-                    return Type.shop;
+                    return RealEstateBLL.Type.shop;
                 case 1:
-                    return Type.warehouse;
+                    return RealEstateBLL.Type.warehouse;
                 default:
-                    return Type.nothing;
+                    return RealEstateBLL.Type.nothing;
             }
         }
 
-        private Type GetSelectedInstitutional()
+        private RealEstateBLL.Type GetSelectedInstitutional()
         {
             int SelectedType = listBox_institutional.SelectedIndex;
 
             switch(SelectedType)
             {
                 case 0:
-                    return Type.school;
+                    return RealEstateBLL.Type.school;
                 case 1:
-                    return Type.university;
+                    return RealEstateBLL.Type.university;
                 default:
-                    return Type.nothing;
+                    return RealEstateBLL.Type.nothing;
             }
         }
 
@@ -922,14 +922,14 @@ namespace Assignment3
             }
         }
 
-        public static T FromXML<T>(string xml)
+        /*public static T FromXML<T>(string xml)
         {
             using (StringReader stringReader = new StringReader(xml))
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(T));
+                XmlSerializer serializer = new XmlSerializer(Typeof(T));
                 return (T)serializer.Deserialize(stringReader);
             }
-        }
+        }*/
 
         public static void ToXML<T>(T obj, string filePath)
         {
@@ -939,7 +939,7 @@ namespace Assignment3
             {
                 using (StringWriter stringWriter = new StringWriter(filePath))//
                 {
-                    XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+                    XmlSerializer xmlSerializer = new XmlSerializer(Typeof(T));
                     xmlSerializer.Serialize(stringWriter, obj);
                     stringWriter.Close();
                 }

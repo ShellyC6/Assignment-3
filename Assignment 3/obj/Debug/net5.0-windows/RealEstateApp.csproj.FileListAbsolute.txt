@@ -1,0 +1,8 @@
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.Form3.resources
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.Properties.Resources.resources
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.csproj.GenerateResource.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.AssemblyInfoInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.AssemblyInfo.cs
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.csproj.CoreCompileInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\Assignment 3\obj\Debug\net5.0-windows\RealEstateApp.csproj.AssemblyReference.cache

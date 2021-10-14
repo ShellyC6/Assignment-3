@@ -1,0 +1,15 @@
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.csproj.AssemblyReference.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.AssemblyInfoInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.AssemblyInfo.cs
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.csproj.CoreCompileInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\RealEstateBLL.deps.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\RealEstateBLL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\ref\RealEstateBLL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\RealEstateBLL.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\RealEstateDAL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\bin\Debug\net5.0\RealEstateDAL.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.csproj.CopyComplete
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\ref\RealEstateBLL.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\RealEstateBLL\obj\Debug\net5.0\RealEstateBLL.pdb
