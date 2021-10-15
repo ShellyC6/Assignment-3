@@ -24,6 +24,16 @@
         "runtime": {
           "bin/placeholder/RealEstateDAL.dll": {}
         }
+      },
+      "UtilitiesLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/UtilitiesLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UtilitiesLib.dll": {}
+        }
       }
     }
   },
@@ -37,11 +47,17 @@
       "type": "project",
       "path": "../RealEstateDAL/RealEstateDAL.csproj",
       "msbuildProject": "../RealEstateDAL/RealEstateDAL.csproj"
+    },
+    "UtilitiesLib/1.0.0": {
+      "type": "project",
+      "path": "../UtilitiesLib/UtilitiesLib.csproj",
+      "msbuildProject": "../UtilitiesLib/UtilitiesLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "RealEstateBLL >= 1.0.0"
+      "RealEstateBLL >= 1.0.0",
+      "UtilitiesLib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -73,6 +89,9 @@
           "projectReferences": {
             "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\RealEstateBLL\\RealEstateBLL.csproj": {
               "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\RealEstateBLL\\RealEstateBLL.csproj"
+            },
+            "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\UtilitiesLib\\UtilitiesLib.csproj": {
+              "projectPath": "C:\\Users\\shell\\Shelly\\Cours\\ING3 - S5 - International\\Programming in C# and .NET\\Assignment 3\\Assignment-3\\UtilitiesLib\\UtilitiesLib.csproj"
             }
           }
         }

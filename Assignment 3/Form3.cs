@@ -212,7 +212,6 @@ namespace RealEstateApp
         {
             EstateObj = null;
 
-
             // Create the payment system selected
             Payment PaymentSystem;
             int SelectedPayment = listBox_PaymentSystem.SelectedIndex;
@@ -766,7 +765,7 @@ namespace RealEstateApp
         {
             int anIndex = listBox1.SelectedIndex;
             if (anIndex != -1)
-            DisplayEstateIndex(anIndex);
+                DisplayEstateIndex(anIndex);
         }
 
         private int SelectedEstateList()
