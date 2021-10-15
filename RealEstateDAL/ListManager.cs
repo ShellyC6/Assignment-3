@@ -7,7 +7,7 @@ namespace RealEstateDAL
 {
     public class ListManager<T> : IListManager<T>
     {
-        private List<T> m_list;
+        protected List<T> m_list;
 
         public ListManager()
         {
@@ -82,7 +82,8 @@ namespace RealEstateDAL
         }
         public void DeleteAll()
         {
-            m_list.Clear();
+            if(m_list!=null)
+                m_list.Clear();
             //m_list = null;
         }
         

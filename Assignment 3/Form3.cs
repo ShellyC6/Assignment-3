@@ -22,6 +22,7 @@ namespace RealEstateApp
         EstateManager EManagerObj = new EstateManager();
         bool change = false;
         string fileName = String.Empty;
+
         public Form3()
         {
             InitializeComponent();
@@ -192,7 +193,7 @@ namespace RealEstateApp
             }
             if (textBox_Amount.Text == "") return false;
 
-            // Check the fields of the adress and legal form
+            // Check the fields of the adress, id, legal form
             if (textBox_Street.Text == "") return false;
             if (Int32.TryParse(textBox_ZipCode.Text, out number) == false) return false;
             if (number <= 0) return false;
@@ -200,6 +201,7 @@ namespace RealEstateApp
             if (listBox_Countries.SelectedIndex < 0) return false;
             if (Int32.TryParse(textBox_ID.Text, out number) == false) return false;
             if (number <= 0) return false;
+            if (!EManagerObj.CheckID(number)) return false;
             if (listBox_LegalForm.SelectedIndex < 0) return false;
 
             // Return true if all the fields are well filled
@@ -281,6 +283,8 @@ namespace RealEstateApp
                     System.Windows.Forms.MessageBox.Show(e.Message, "Error");
                 }
                 change = false;
+                listBox1.Enabled = true;
+                listBox1.BackColor = Color.White;
             }
 
             ClearForm();
@@ -624,9 +628,12 @@ namespace RealEstateApp
         private void button_Modify_Click(object sender, EventArgs e)
         {
             int anIndex;
-            change = true;
             if (ValidSelectedList())
             {
+                change = true;
+                listBox1.Enabled=false;
+                listBox1.BackColor =Color.LightGray;
+
                 anIndex = SelectedEstateList();
                 DisplayEstateIndex(anIndex);
                 ClearForm();

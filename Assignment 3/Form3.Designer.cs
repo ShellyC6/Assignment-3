@@ -118,6 +118,7 @@ namespace RealEstateApp
             this.buttonDeleteAll = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ResidentialFields.SuspendLayout();
             this.CommercialFields.SuspendLayout();
             this.InstitutionalFields.SuspendLayout();
@@ -900,7 +901,8 @@ namespace RealEstateApp
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
             this.xMLToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenuItem,
+            this.saveToolStripMenuItem1});
             this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
             this.fIleToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fIleToolStripMenuItem.Text = "File";
@@ -975,6 +977,7 @@ namespace RealEstateApp
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.Color.White;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(15, 28);
@@ -996,6 +999,12 @@ namespace RealEstateApp
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem1.Text = "Save";
             // 
             // Form3
             // 
@@ -1158,5 +1167,6 @@ namespace RealEstateApp
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem1;
     }
 }
