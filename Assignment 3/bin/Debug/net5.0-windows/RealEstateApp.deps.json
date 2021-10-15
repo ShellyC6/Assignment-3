@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "RealEstateApp/1.0.0": {
+        "dependencies": {
+          "RealEstateBLL": "1.0.0"
+        },
+        "runtime": {
+          "RealEstateApp.dll": {}
+        }
+      },
+      "RealEstateBLL/1.0.0": {
+        "dependencies": {
+          "RealEstateDAL": "1.0.0"
+        },
+        "runtime": {
+          "RealEstateBLL.dll": {}
+        }
+      },
+      "RealEstateDAL/1.0.0": {
+        "runtime": {
+          "RealEstateDAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RealEstateApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealEstateBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RealEstateDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

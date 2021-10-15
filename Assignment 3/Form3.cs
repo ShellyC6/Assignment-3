@@ -31,7 +31,7 @@ namespace RealEstateApp
         private void Init()
         {
             // Display the enum countries in a listbox
-            Array array = Enum.GetValues(Typeof(RealEstateBLL.Countries));
+            Array array = Enum.GetValues(typeof(Countries));
             listBox_Countries.BeginUpdate();
             foreach (object obj in array)
             {
@@ -260,10 +260,26 @@ namespace RealEstateApp
                     break;
             }
             if (!change)
-                 EManagerObj.Add(EstateObj);
+            {
+                try
+                {
+                    EManagerObj.Add(EstateObj);
+                }
+                catch (Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message, "Error");
+                }
+            }
             else
             {
-                EManagerObj.ChangeAt(EstateObj, SelectedEstateList());
+                try
+                {
+                    EManagerObj.ChangeAt(EstateObj, SelectedEstateList());
+                }
+                catch (Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message, "Error");
+                }
                 change = false;
             }
 
@@ -713,7 +729,14 @@ namespace RealEstateApp
                 DialogResult dialogResult = MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    EManagerObj.DeleteAt(listBox1.SelectedIndex);
+                    try
+                    {
+                        EManagerObj.DeleteAt(listBox1.SelectedIndex);
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Windows.Forms.MessageBox.Show(ex.Message, "Error");
+                    }
                 }
                 else if (dialogResult == DialogResult.No)
                 {

@@ -22,50 +22,49 @@ namespace RealEstateDAL
 
         public int Count()
         {
-              return m_list.Count;
+            return m_list.Count;
         }
 
         public bool Add(T aType)
         {
-            try
-            {
+            //try
+            //{
                 m_list.Add(aType);
-            }
+            /*}
             catch(Exception e)
             {
-                //System.Windows.Forms.MessageBox.Show(e.Message, "Error"); 
+                System.Windows.Forms.MessageBox.Show(e.Message, "Error"); 
                 return false;
-            }
-
+            }*/
             return true;
         }
 
         public bool DeleteAt(int anIndex)
         {
-            try
-            {
+            //try
+            //{
                 m_list.RemoveAt(anIndex);
-            }
+            /*}
             catch(Exception e)
             {
-               //System.Windows.Forms.MessageBox.Show(e.Message, "Error");
+                System.Windows.Forms.MessageBox.Show(e.Message, "Error");
                 return false;
-            }
+            }*/
             return true;
         }
 
         public bool ChangeAt(T aType, int anIndex)
         {
-            try
-            {
+            //try
+            //{
                 m_list.RemoveAt(anIndex);
                 m_list.Insert(anIndex, aType);
-            }
+            /*}
             catch(Exception e)
             {
-                //System.Windows.Forms.MessageBox.Show(e.Message, "Error");
+                System.Windows.Forms.MessageBox.Show(e.Message, "Error");
                 return false;
-            }
+            }*/
             return true;
         }
 
@@ -106,8 +105,5 @@ namespace RealEstateDAL
             }
             return anArray;
         }
-
-
-
     }
 }
