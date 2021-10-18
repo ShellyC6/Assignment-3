@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "RealEstateApp/1.0.0": {
         "dependencies": {
-          "RealEstateBLL": "1.0.0"
+          "RealEstateBLL": "1.0.0",
+          "UtilitiesLib": "1.0.0"
         },
         "runtime": {
           "RealEstateApp.dll": {}
@@ -26,6 +27,11 @@
         "runtime": {
           "RealEstateDAL.dll": {}
         }
+      },
+      "UtilitiesLib/1.0.0": {
+        "runtime": {
+          "UtilitiesLib.dll": {}
+        }
       }
     }
   },
@@ -41,6 +47,11 @@
       "sha512": ""
     },
     "RealEstateDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UtilitiesLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

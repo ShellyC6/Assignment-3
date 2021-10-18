@@ -1,0 +1,12 @@
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.csproj.AssemblyReference.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.AssemblyInfoInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.AssemblyInfo.cs
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.csproj.CoreCompileInputs.cache
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\bin\Debug\net5.0\UtilitiesLib.deps.json
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\bin\Debug\net5.0\UtilitiesLib.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\bin\Debug\net5.0\ref\UtilitiesLib.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\bin\Debug\net5.0\UtilitiesLib.pdb
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\ref\UtilitiesLib.dll
+C:\Users\shell\Shelly\Cours\ING3 - S5 - International\Programming in C# and .NET\Assignment 3\Assignment-3\UtilitiesLib\obj\Debug\net5.0\UtilitiesLib.pdb

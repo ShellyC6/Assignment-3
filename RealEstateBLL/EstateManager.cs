@@ -15,9 +15,12 @@ namespace RealEstateBLL
 
         public bool CheckID(int ID)
         {
-            foreach (Estate estate in m_list)
+            if (m_list != null)
             {
-                if (ID == estate.Id) return false;
+                foreach (Estate estate in m_list)
+                {
+                    if (ID == estate.Id) return false;
+                }
             }
             return true;
         }

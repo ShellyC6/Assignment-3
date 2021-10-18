@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+//
 using System.IO;//FileStream, Reader/Writer classes
 using System.Runtime.Serialization; //IFormatter
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
+//
 using RealEstateBLL;
 using RealEstateDAL;
+using UtilitiesLib;
 
 namespace RealEstateApp
 {
@@ -826,59 +829,9 @@ namespace RealEstateApp
             }
         }
 
-        public static string BinaryFileSerialize<T> (string filePath, T obj)
-        {
-            FileStream fileStream = null;
-            string errorMsg = null;
-            try
-            {
-                fileStream = new FileStream(filePath, FileMode.Create);
-                BinaryFormatter b = new BinaryFormatter();
-                b.Serialize(fileStream, obj);
-                
-            }
-            catch(Exception e)
-            {
-                errorMsg = e.Message;
-            }
-            finally
-            {
-                if (fileStream != null)
-                    fileStream.Close();
-            }
-            return errorMsg;
-        }
+        
 
-        public static T BinaryFileDeSerialize<T>(string filePath, out string errorMessage)
-        {
-            FileStream fileStream = null;
-            errorMessage = null;
-
-            Object obj = null;
-            try
-            {
-                if(!File.Exists(filePath))
-                {
-                    errorMessage = $"The file {filePath} was not found. ";
-                    throw (new FileNotFoundException(errorMessage));
-                }
-                using (StringReader reader = new StringReader(filePath))//
-                {
-                    fileStream = new FileStream(filePath, FileMode.Open);
-                    BinaryFormatter b = new BinaryFormatter();
-                    obj = (List<Estate>)b.Deserialize(fileStream);
-
-                }
-                  
-
-            }
-            catch(Exception e)
-            {
-                if (errorMessage != null)
-                    errorMessage = e.Message;
-            }
-            return (T)obj;
-        }
+        
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -889,7 +842,7 @@ namespace RealEstateApp
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     fileName = saveFileDialog1.FileName;
-                    BinaryFileSerialize(fileName, EManagerObj.M_list);
+                    ClassSerialization.BinaryFileSerialize(fileName, EManagerObj.M_list);
                 }
 
             }
@@ -916,7 +869,7 @@ namespace RealEstateApp
                 }
 
                 else
-                    BinaryFileSerialize(fileName, EManagerObj.M_list);
+                    ClassSerialization.BinaryFileSerialize(fileName, EManagerObj.M_list);
             }
             
         }
@@ -944,42 +897,14 @@ namespace RealEstateApp
                 fileName = openFileDialog1.FileName;
                 EstateObj = null;
                 EManagerObj.DeleteAll();
-                EManagerObj.M_list =  BinaryFileDeSerialize<List<Estate>>(fileName, out errorM);
+                EManagerObj.M_list = BinaryFileDeSerialize<List<Estate>>(fileName, out errorM);
                 if (errorM != null)
                     MessageBox.Show(errorM);
                 ClearForm();
             }
         }
 
-        /*public static T FromXML<T>(string xml)
-        {
-            using (StringReader stringReader = new StringReader(xml))
-            {
-                XmlSerializer serializer = new XmlSerializer(Typeof(T));
-                return (T)serializer.Deserialize(stringReader);
-            }
-        }*/
-
-        public static void ToXML<T>(T obj, string filePath)
-        {
-            /*
-            string errorM = null;
-            try
-            {
-                using (StringWriter stringWriter = new StringWriter(filePath))//
-                {
-                    XmlSerializer xmlSerializer = new XmlSerializer(Typeof(T));
-                    xmlSerializer.Serialize(stringWriter, obj);
-                    stringWriter.Close();
-                }
-                
-            }
-            catch(Exception e)
-            {
-                //errorM = e.Message;
-            }*/
-
-        }
+        
 
         private void importFromXMLFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -995,9 +920,40 @@ namespace RealEstateApp
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     fileName = saveFileDialog1.FileName;
-                    ToXML(EManagerObj.M_list, fileName);
+                    ClassSerialization.ToXML(EManagerObj.M_list, fileName);
                 }
             }
+        }
+
+
+
+        public static T BinaryFileDeSerialize<T>(string filePath, out string errorMessage)
+        {
+            FileStream fileStream = null;
+            errorMessage = null;
+
+            Object obj = null;
+            try
+            {
+                if (!File.Exists(filePath))
+                {
+                    errorMessage = $"The file {filePath} was not found. ";
+                    throw (new FileNotFoundException(errorMessage));
+                }
+                using (StringReader reader = new StringReader(filePath))//
+                {
+                    fileStream = new FileStream(filePath, FileMode.Open);
+                    BinaryFormatter b = new BinaryFormatter();
+                    obj = (List<Estate>)b.Deserialize(fileStream);
+                    //obj = (List<T>)b.Deserialize(fileStream);
+                }
+            }
+            catch (Exception e)
+            {
+                if (errorMessage != null)
+                    errorMessage = e.Message;
+            }
+            return (T)obj;
         }
     }
 }
